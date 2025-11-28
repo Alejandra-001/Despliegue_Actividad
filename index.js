@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PUERTO, () => {
-    console.log(`🚀 Servidor escuchando en http://localhost:${PUERTO}`);
+    console.log(`🚀 Servidor escuchando en http://34.227.207.109:${PUERTO}`);
 });
 
 const path = require("path");
