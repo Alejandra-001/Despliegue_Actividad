@@ -17,9 +17,10 @@ app.get("/", (req, res) => {
     res.send("Hola desde el servidor");
 });
 
-app.listen(PUERTO, () => {
-    console.log(`🚀 Servidor escuchando en http://34.227.207.109:${PUERTO}`);
+app.listen(PUERTO, '0.0.0.0', () => {
+  console.log(`🚀 Servidor escuchando en http://34.227.207.109:${PUERTO}`);
 });
+
 
 const path = require("path");
 app.use('/imagenes', express.static(path.join(__dirname, 'imagenes')));
